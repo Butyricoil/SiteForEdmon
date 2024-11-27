@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт квартир в Краснодаре</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ремонт квартир в Краснодаре</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#projects">Примеры работ</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Косметический ремонт</h3>
+                    <p>Мы поможем освежить ваш интерьер, покрасив стены и потолки, заменив обои и улучшив освещение.</p>
+                </div>
+                <div class="service">
+                    <h3>Капитальный ремонт</h3>
+                    <p>Полный ремонт с заменой труб, электрики и улучшением планировки квартиры.</p>
+                </div>
+                <div class="service">
+                    <h3>Дизайн интерьера</h3>
+                    <p>Разработаем уникальный проект интерьера, который подчеркнет стиль вашего дома.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Примеры работ</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="gallery/example1.jpg" alt="Пример работы 1">
+                    <h3>Косметический ремонт квартиры</h3>
+                    <p>Ремонт с покраской стен, заменой обоев и освежением интерьера.</p>
+                </div>
+                <div class="project">
+                    <img src="gallery/example2.jpg" alt="Пример работы 2">
+                    <h3>Дизайн интерьера гостиной</h3>
+                    <p>Проектирование и реализация уникального дизайна для гостиной.</p>
+                </div>
+                <div class="project">
+                    <img src="gallery/example3.jpg" alt="Пример работы 3">
+                    <h3>Капитальный ремонт спальной комнаты</h3>
+                    <p>Полный ремонт с заменой напольного покрытия и потолка</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Мы — команда профессионалов с многолетним опытом работы в области ремонта и дизайна интерьера в Краснодаре. Мы гарантируем высокое качество работы и индивидуальный подход к каждому клиенту.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами для консультации и получения расчетов.</p>
+            <form id="contactForm">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <p id="formMessage"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ремонт квартир в Краснодаре. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
