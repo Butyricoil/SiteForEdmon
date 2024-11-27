@@ -1,15 +1,15 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+// Инициализация карты Google
+function initMap() {
+    var myLatLng = { lat: 45.0352, lng: 38.9753 }; // Координаты Краснодара
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: myLatLng,
+    });
 
-    if (name && email) {
-        document.getElementById("formMessage").textContent = "Спасибо за ваш запрос, мы скоро с вами свяжемся!";
-        document.getElementById("formMessage").style.color = "green";
-        document.getElementById("contactForm").reset();
-    } else {
-        document.getElementById("formMessage").textContent = "Пожалуйста, заполните все поля.";
-        document.getElementById("formMessage").style.color = "red";
-    }
-});
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: "г. Краснодар, ул. Примерная, д. 1"
+    });
+}

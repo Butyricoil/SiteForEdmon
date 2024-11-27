@@ -1,115 +1,116 @@
-* {
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Шапка */
 header {
     background-color: #333;
     color: white;
     padding: 20px 0;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
+header .logo {
     font-size: 24px;
+    font-weight: bold;
+    float: left;
 }
 
-header nav ul {
-    list-style-type: none;
-    display: flex;
+header .contact {
+    text-align: right;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-header nav ul li {
-    margin-left: 20px;
+header .contact a {
+    color: #FFD700;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.section {
+/* Раздел Контакты */
+.contact-info {
     padding: 40px 0;
+    background-color: #fff;
 }
 
-.section h2 {
-    font-size: 32px;
+.contact-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
-.container {
-    width: 80%;
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.info-item {
+    width: 30%;
+}
+
+.info-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 16px;
+}
+
+.info-item a {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
     margin: 0 auto;
 }
 
-.services {
-    display: flex;
-    justify-content: space-between;
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
-.service {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-}
-
-.projects {
-    display: flex;
-    justify-content: space-between;
-}
-
-.project {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-form input {
-    width: 100%;
+form input, form textarea {
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
     border-radius: 4px;
 }
 
 form button {
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    font-size: 16px;
+    background-color: #FFD700;
     border: none;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #555;
+/* Карта */
+#map {
+    height: 400px;
+    margin-top: 20px;
 }
 
+/* Футер */
 footer {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
