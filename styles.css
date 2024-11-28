@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden;
 }
 
 .container {
@@ -12,42 +13,64 @@ body {
     margin: 0 auto;
 }
 
+/* Слайдер фона */
+.background-slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.background-image.active {
+    opacity: 1;
+}
+
 /* Шапка */
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
     padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 header .logo {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
-    float: left;
-}
-
-header .contact {
-    text-align: right;
-    font-size: 18px;
-    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header .contact a {
     color: #FFD700;
+    font-size: 20px;
+    animation: bounce 2s infinite;
 }
 
 /* Раздел Контакты */
 .contact-info {
-    padding: 40px 0;
-    background-color: #fff;
+    padding: 60px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: slideUp 1s ease-in-out;
 }
 
 .contact-info h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.contact-info p {
-    font-size: 16px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
@@ -59,46 +82,7 @@ header .contact a {
 
 .info-item {
     width: 30%;
-}
-
-.info-item h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.info-item p {
-    font-size: 16px;
-}
-
-.info-item a {
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 0 auto;
-}
-
-form label {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #FFD700;
-    border: none;
-    cursor: pointer;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Карта */
@@ -109,8 +93,41 @@ form button {
 
 /* Футер */
 footer {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
