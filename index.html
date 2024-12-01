@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,25 +8,38 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
-    <title>Mini Profile - Free Bootstrap CSS Template</title>
-    
-<!--
-Mini Profile Template
-https://templatemo.com/tm-530-mini-profile
--->
+    <title>Ремонт от Эдмона</title>
   </head>
   <body>
-    <!-- Welcome Section -->
+    <!-- Верхний блок с логотипом и контактами -->
+    <header class="tm-header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <img src="img/logo.png" alt="Логотип" class="tm-logo" style="max-height: 60px;" />
+          </div>
+          <div class="col-6 text-right">
+            <p class="mb-0">📞 +7 (123) 456-78-90</p>
+            <p class="mb-0">📧 remont-krasnodar@example.com</p>
+            <p class="mb-0">
+              <a href="#" class="text-white"><i class="fab fa-telegram"></i></a>
+              <a href="#" class="text-white ml-3"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="text-white ml-3"><i class="fab fa-instagram"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Раздел "О нас" -->
     <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
       <div class="container-fluid tm-brand-container-outer">
         <div class="row">
           <div class="col-12">
-            <!-- Logo Area -->
-            <!-- Black transparent bg -->
             <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
               <div class="tm-brand-container text-center">
-                <h1 class="tm-brand-name">Mini Profile</h1>
-                <p class="tm-brand-description mb-0">simple parallax template</p>
+                <h1 class="tm-brand-name">Ремонт от Эдмона</h1>
+                <p class="tm-brand-description mb-0">Качественный ремонт квартир в Краснодаре</p>
               </div>
             </div>
           </div>
@@ -36,24 +49,19 @@ https://templatemo.com/tm-530-mini-profile
       <div class="tm-bg-white-transparent tm-welcome-container">
         <div class="container-fluid">
           <div class="row h-100">
-            <!-- Welcome Text -->
-            <!-- White transparent bg -->
             <div class="col-md-7 tm-welcome-left-col">
               <div class="tm-welcome-left">
-                <h2 class="tm-welcome-title">Welcome to Mini Profile Page</h2>
+                <h2 class="tm-welcome-title">О нас</h2>
                 <p class="pb-0">
-                  This is Bootstrap v4.3.1 parallax layout for you. Credit goes to <a rel="nofollow" href="https://www.pexels.com">Pexels</a> for 2 background images. In
-                  odio sapien, commodo id ullamcorper ac, dignissim at sapien.
-                  Nullam leo massa, vaius ac massa et, tincidunt imperdiet
-                turpis. </p>
+                  Мы предоставляем полный спектр услуг по ремонту квартир в Краснодаре. Используем только качественные материалы и современные технологии. Индивидуальный подход к каждому клиенту.
+                </p>
               </div>
             </div>
-            <!-- Brown bg -->
             <div class="col-md-5">
               <div class="tm-welcome-right">
-                <i class="fas fa-4x fa-address-card p-3 tm-welcome-icon"></i>
+                <i class="fas fa-4x fa-tools p-3 tm-welcome-icon"></i>
                 <p class="mb-0">
-                  Please spread a word about templatemo website. Anyone can download free Bootstrap CSS templates.
+                  Мы гарантируем высокое качество работы и соблюдение сроков. Доверьте ремонт вашей квартиры профессионалам!
                 </p>
               </div>
             </div>
@@ -61,216 +69,61 @@ https://templatemo.com/tm-530-mini-profile
         </div>
       </div>
     </section>
-    <!-- End Welcome section -->
 
-    <!-- Portfolio section -->
-    <section id="tmPortfolio">
+    <!-- Раздел "Наши услуги" -->
+    <section id="tmServices">
       <div class="container-fluid">
+        <h2 class="text-center tm-text-green">Наши услуги</h2>
         <div class="row">
-          <div class="col-12">
-            <div class="tm-portfolio-item">
-              <div class="tm-portfolio-name text-white tm-bg-green">
-                Project Manager
-              </div>
-              <div class="tm-portfolio-description">
-                <h3 class="tm-text-green">
-                  New Company
-                  <span class="tm-title-small">(2019 January to Present)</span>
-                </h3>
-                <p class="mb-0">
-                  Nullam a tellus ultricies, ornare purus vel, porttitor massa.
-                  Aliquam facilisis purus ac eros sollicidudin, in mollis neque
-                  facilisis. Duis malesuada, mi non elementum malesuada.
-                </p>
-              </div>
-            </div>
-
-            <div class="tm-portfolio-item">
-              <div class="tm-portfolio-name text-white tm-bg-orange">
-                Senior UX Designer
-              </div>
-              <div class="tm-portfolio-description">
-                <h3 class="tm-text-orange">
-                  Studio One
-                  <span class="tm-title-small">(2017 April to 2018 Dec)</span>
-                </h3>
-                <p class="mb-0">
-                  Phasellus ac nulla egestas, malesuada dolor quis, scelerisque
-                  arcu. Morbi aliquam, nunc vel blandit mattis, sapien nisl
-                  convallis sem, quis hendrerit nisl tellus in lectus. Proin at
-                  nibh bibendum, tincidunt mauris sit amet, porta risus. Integer
-                  id malesuada ligula.
-                </p>
-              </div>
-            </div>
-
-            <div class="tm-portfolio-item">
-              <div class="tm-portfolio-name text-white tm-bg-blue">
-                Graphic Designer
-              </div>
-              <div class="tm-portfolio-description">
-                <h3 class="tm-text-blue">
-                  Digital Com
-                  <span class="tm-title-small">(2015 Jan to 2016 Dec)</span>
-                </h3>
-                <p class="mb-0">
-                  Etiam porta est nisl, consectetur dapibus ante faucibus id.
-                  Nunc ullamcorper a quam eget tincidunt. Proin vehicula mauris
-                  ipsum, euismod dignissim dolor convallis ac.
-                </p>
-              </div>
-            </div>
-
-            <div class="tm-portfolio-item">
-              <div class="tm-portfolio-name text-white tm-bg-dark-gray">
-                Design School
-              </div>
-              <div class="tm-portfolio-description">
-                <h3 class="tm-text-dark-gray">
-                  Art Design College
-                  <span class="tm-title-small">
-                    (2012 May to 2014 Dec)
-                  </span>
-                </h3>
-                <p class="mb-0">
-                  Etiam porta est nisl, consectetur dapibus ante faucibus id.
-                  Nunc ullamcorper a quam eget tincidunt. Proin vehicula mauris
-                  ipsum, euismod dignissim dolor convallis ac.
-                </p>
-              </div>
-            </div>
+          <div class="col-md-4 tm-service-item">
+            <i class="fas fa-3x fa-paint-roller tm-service-icon"></i>
+            <h3 class="tm-text-green">Косметический ремонт</h3>
+            <p>Обновление интерьера: покраска, обои, укладка напольных покрытий.</p>
+          </div>
+          <div class="col-md-4 tm-service-item">
+            <i class="fas fa-3x fa-hammer tm-service-icon"></i>
+            <h3 class="tm-text-orange">Капитальный ремонт</h3>
+            <p>Полная реконструкция с заменой инженерных коммуникаций.</p>
+          </div>
+          <div class="col-md-4 tm-service-item">
+            <i class="fas fa-3x fa-lightbulb tm-service-icon"></i>
+            <h3 class="tm-text-blue">Дизайнерские проекты</h3>
+            <p>Создание уникальных интерьеров по вашим пожеланиям.</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- End portfolio section -->
 
-    <!-- Contact section -->
+    <!-- Раздел "Контакты" -->
     <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="tm-contact-items-container">
+            <h2 class="text-center text-white">Контакты</h2>
+            <div class="tm-contact-items-container text-center">
               <div class="tm-contact-item">
-                <i class="fas fa-5x fa-briefcase tm-contact-item-icon"></i>
-                <p class="mb-0">
-                  Quisque venenatis viverra ultrices. Lorem ipsum dolor sit
-                  amet. Nullam sit amet tempor nisl.
-                </p>
+                <i class="fas fa-5x fa-phone-alt tm-contact-item-icon"></i>
+                <p>+7 (123) 456-78-90</p>
               </div>
               <div class="tm-contact-item">
-                <i class="fas fa-5x fa-building tm-contact-item-icon"></i>
-                <p class="mb-0">
-                  You can absolutely feel free to use Mini Profile for your web page or any usage for your website.
-                </p>
+                <i class="fas fa-5x fa-envelope tm-contact-item-icon"></i>
+                <p>remont-krasnodar@example.com</p>
               </div>
-
               <div class="tm-contact-item">
-                <i class="fas fa-5x fa-balance-scale tm-contact-item-icon"></i>
-                <p class="mb-0">
-                  You are NOT allowed to re-distribute this template in any download website. Else, it is illegal action.
-                </p>
+                <i class="fas fa-5x fa-map-marker-alt tm-contact-item-icon"></i>
+                <p>г. Краснодар, ул. Примерная, 10</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-12">
-            <form
-              action="index.html"
-              method="POST"
-              id="tmContactForm"
-              class="tm-bg-white-transparent"
-            >
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="contact_name"
-                  name="contact_name"
-                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="contact_email"
-                  name="contact_email"
-                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  rows="4"
-                  id="contact_message"
-                  name="contact_message"
-                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                  placeholder="Message"
-                  required
-                ></textarea>
-              </div>
-              <div class="text-center">
-                <button
-                  type="submit"
-                  class="btn tm-btn-submit rounded-0 text-white"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- row -->
-        <div class="row">
-          <footer class="col-12">
-            <p class="text-center tm-copyright-text">
-            Copyright 2020 Mini Profile Page 
-            
-            - Design: Template Mo</p>
-          </footer>
-        </div>
+        <footer class="col-12">
+          <p class="text-center tm-copyright-text">Copyright 2024 Ремонт от Эдмона</p>
+        </footer>
       </div>
-      <!-- container -->
     </div>
-    <!-- section -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
-    <script>
-      function detectMsBrowser() {
-        using_ms_browser =
-          navigator.appName == "Microsoft Internet Explorer" ||
-          (navigator.appName == "Netscape" &&
-            navigator.appVersion.indexOf("Edge") > -1) ||
-          (navigator.appName == "Netscape" &&
-            navigator.appVersion.indexOf("Trident") > -1);
-
-        if (using_ms_browser == true) {
-          alert(
-            "Please use Chrome or Firefox for the best browsing experience!"
-          );
-        }
-      }
-      function setBrandMarginTop() {
-        var bottomContainerHeight = $(".tm-welcome-container").height();
-
-        $(".tm-brand-container-outer").css({
-          "margin-top": -bottomContainerHeight + "px"
-        });
-      }
-
-      $(function() {
-        setBrandMarginTop();
-        detectMsBrowser();
-
-        // Handle window resize event
-        $(window).resize(function() {
-          setBrandMarginTop();
-        });
-      });
-    </script>
   </body>
 </html>
