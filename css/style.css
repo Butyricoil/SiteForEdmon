@@ -42,3 +42,37 @@
   border-radius: 15px;
   /* Закругление углов */
 }
+
+/* Убираем отступ слева на мобильных устройствах */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#tmWelcome,
+#tmContact,
+.tm-contact-items-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Убираем дополнительные отступы на малых экранах */
+@media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+  }
+
+  .tm-brand-container,
+  .tm-welcome-container,
+  .tm-contact-item {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
