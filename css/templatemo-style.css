@@ -1,8 +1,6 @@
 html {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  width: 100%;
-  overflow-x: hidden; /* Убираем горизонтальное прокручивание */
 }
 
 body {
@@ -10,9 +8,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #6b6b6b;
-  overflow-x: hidden; /* Убираем горизонтальное прокручивание */
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden;
 }
 
 a,
@@ -25,9 +21,7 @@ a:hover {
 }
 
 .container-fluid {
-  max-width: 100%; /* Устанавливаем максимальную ширину 100% */
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1200px;
 }
 
 .tm-bg-black-transparent {
@@ -61,7 +55,6 @@ a:hover {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .tm-brand-container-outer {
@@ -69,24 +62,20 @@ a:hover {
 }
 
 .tm-brand-container-inner {
-  max-width: 100%; /* Сделаем контейнер внутренним и адаптивным */
+  max-width: 580px;
   width: 100%;
 }
 
 .tm-brand-container {
-  padding: 75px 20px;
-  max-width: 580px;
-  margin: 0 auto; /* Центрируем */
+  padding: 75px 110px;
 }
 
 .tm-brand-name {
-  font-size: 2.8rem; /* Уменьшаем размер шрифта для мобильных */
-  text-align: center;
+  font-size: 3.8rem;
 }
 
 .tm-brand-description {
-  font-size: 1.2rem; /* Уменьшаем размер шрифта для мобильных */
-  text-align: center;
+  font-size: 1.4rem;
 }
 
 .parallax-window {
@@ -145,18 +134,21 @@ a:hover {
 }
 
 .tm-contact-item {
-  width: 100%;
+  width: 33.3334%;
   max-width: 345px;
   height: auto;
   min-height: 420px;
-  margin-bottom: 30px;
+  margin-right: 35px;
   background-color: white;
   padding: 54px 34px 44px;
 }
 
+.tm-contact-item:last-child {
+  margin-right: 0;
+}
+
 .tm-contact-items-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 130px;
 }
@@ -208,8 +200,6 @@ a:hover {
   color: #676767;
 }
 
-/* Мобильные стили */
-
 @media (max-width: 1054px) {
   .tm-contact-item-icon {
     margin-bottom: 15px;
@@ -222,11 +212,11 @@ a:hover {
   }
 
   .tm-contact-item {
-    width: 100%;
-    max-width: none; /* Убираем максимальную ширину */
-    min-height: auto;
-    margin-left: 0;
-    margin-right: 0;
+    width: auto;
+    max-width: 680px;
+    min-height: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
   }
 
@@ -262,13 +252,13 @@ a:hover {
 
 @media (max-width: 572px) {
   .tm-brand-container {
-    padding: 45px 20px;
+    padding: 45px;
   }
 }
 
 @media (max-width: 443px) {
   .tm-brand-name {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .tm-brand-container {
