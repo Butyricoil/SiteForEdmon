@@ -14,4 +14,9 @@ const swiper = new Swiper('.swiper-container', {
     },
     effect: 'fade', // Плавный эффект перехода между слайдами
   });
-  
+
+  $(document).ready(function () {
+    if (window.innerWidth > 768) {
+      $('.parallax-window').parallax();
+    }
+  });
