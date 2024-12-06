@@ -1,62 +1,37 @@
 .phone-container {
-  position: relative;
-  display: inline-block;
-  text-align: center;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .btn-phone {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 20px; 
+    color: white;
+    font-size: 16px;
+    line-height: 40px; 
+    text-decoration: none;
+    text-align: center;
 }
 
-.btn-phone {
-  display: inline-block;
-  width: 250px;
-  /* Ширина кнопки */
-  height: 50px;
-  /* Высота кнопки */
-  background-color: #007bff;
-  border-radius: 30px;
-  /* Овальная форма */
-  color: white;
-  font-size: 18px;
-  line-height: 50px;
-  /* Центрирование текста */
-  text-decoration: none;
-  text-align: center;
-}
-
-.phone-label {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #000000;
-  opacity: 0.7;
-}
-
-.tm-header-content {
-  margin-top: 30px;
-  /* Отступ сверху для перемещения блока ниже */
-}
-
-.tm-logo {
-  max-height: 150px;
-  margin-top: 20px;
-  /* Отступ сверху */
-  margin-bottom: 20px;
-  /* Отступ снизу */
-  border-radius: 15px;
-  /* Закругление углов */
-}
-
-/* Убираем отступ слева на мобильных устройствах */
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-#tmWelcome,
-#tmContact,
-.tm-contact-items-container {
-  margin-left: 0;
-  margin-right: 0;
-}
+  
+  .phone-label {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #000000;
+    opacity: 0.7;
+  }
+  
+  .tm-header-content {
+    margin-top: 30px; /* Отступ сверху для перемещения блока ниже */
+  }
+  .tm-logo {
+    max-height: 150px;
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+    border-radius: 15px; /* Закругление углов */
+  }
+  

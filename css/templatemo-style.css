@@ -1,29 +1,3 @@
-html {
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #6b6b6b;
-  overflow-x: hidden;
-}
-
-a,
-button {
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.container-fluid {
-  max-width: 1200px;
-}
-
 .tm-bg-black-transparent {
   background-color: rgba(0, 0, 0, 0.5);
 }
