@@ -77,6 +77,59 @@
     </div>
   </section>
 
+  <section id="tmGallery" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <!-- Индикаторы -->
+    <ol class="carousel-indicators">
+      <li data-bs-target="#tmGallery" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#tmGallery" data-bs-slide-to="1"></li>
+      <li data-bs-target="#tmGallery" data-bs-slide-to="2"></li>
+      <li data-bs-target="#tmGallery" data-bs-slide-to="3"></li>
+    </ol>
+
+    <!-- Слайды -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/repair1.jpg" class="d-block w-100" alt="Repair 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ремонт 1</h5>
+          <p>Описание ремонта 1</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/repair2.jpg" class="d-block w-100" alt="Repair 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ремонт 2</h5>
+          <p>Описание ремонта 2</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/repair3.jpg" class="d-block w-100" alt="Repair 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ремонт 3</h5>
+          <p>Описание ремонта 3</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/repair4.jpg" class="d-block w-100" alt="Repair 4">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ремонт 4</h5>
+          <p>Описание ремонта 4</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Кнопки управления -->
+    <a class="carousel-control-prev" href="#tmGallery" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Предыдущий</span>
+    </a>
+    <a class="carousel-control-next" href="#tmGallery" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </a>
+  </section>
+
+
   <!-- Раздел "Наши услуги" -->
   <section id="tmServices">
     <div class="container-fluid">
@@ -101,46 +154,51 @@
     </div>
   </section>
 
-<!-- Раздел "Контакты" -->
-<div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center text-white">Контакты</h2>
-        <div class="tm-contact-items-container text-center">
-          <!-- Контактный номер телефона -->
-          <div class="tm-contact-item">
-            <a href="tel:+79186495053" class="tm-contact-link">
-              <i class="fas fa-phone-alt fa-5x tm-contact-item-icon"></i>
-              <p>+7 (918) 649-50-53</p>
-            </a>
-          </div>
-          <!-- Местоположение -->
-          <div class="tm-contact-item">
-            <a href="https://www.google.com/maps" target="_blank" class="tm-contact-link">
-              <i class="fas fa-map-marker-alt fa-5x tm-contact-item-icon"></i>
-              <p>Работаем на Выезд</p>
-            </a>
-          </div>
-          <!-- Контакт на YouTube -->
-          <div class="tm-contact-item">
-            <a href="https://www.youtube.com/@Master-Gangster" target="_blank" class="tm-contact-link">
-              <i class="fab fa-youtube fa-5x tm-contact-item-icon"></i>
-              <p>Наш YouTube канал</p>
-            </a>
+  <!-- Раздел "Контакты" -->
+  <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center text-white">Контакты</h2>
+          <div class="tm-contact-items-container text-center">
+            <!-- Контактный номер телефона -->
+            <div class="tm-contact-item">
+              <a href="tel:+79186495053" class="tm-contact-link">
+                <i class="fas fa-phone-alt fa-5x tm-contact-item-icon" style="color: #28a745;"></i>
+                <p>+7 (918) 649-50-53</p>
+              </a>
+            </div>
+            <!-- Местоположение -->
+            <div class="tm-contact-item">
+              <a href="#" class="tm-contact-link">
+                <i class="fas fa-car fa-5x tm-contact-item-icon" style="color: #ff5722;"></i>
+                <p>Работаем на Выезд</p>
+              </a>
+            </div>
+            <!-- Контакт на YouTube -->
+            <div class="tm-contact-item">
+              <a href="https://www.youtube.com/@Master-Gangster" target="_blank" class="tm-contact-link">
+                <i class="fab fa-youtube fa-5x tm-contact-item-icon" style="color: #ff0000;"></i>
+                <p>Наш YouTube канал</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <footer class="col-12">
-      <p class="text-center tm-copyright-text">Copyright 2024 Ремонт от Эдмона</p>
-    </footer>
   </div>
-</div>
+
+
+  <footer class="col-12">
+    <p class="text-center tm-copyright-text">Copyright 2024 Ремонт от Эдмона</p>
+  </footer>
+  </div>
+  </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

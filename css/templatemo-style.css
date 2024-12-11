@@ -239,3 +239,28 @@
     padding: 25px;
   }
 }
+
+/* Стили ссылок */
+.tm-contact-link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; /* Новый шрифт */
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.tm-contact-link:hover {
+    color: #ff7b00; /* Цвет текста при наведении */
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+/* Иконки */
+.tm-contact-item-icon {
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.tm-contact-item-icon:hover {
+    transform: scale(1.2); /* Увеличение иконки при наведении */
+}
