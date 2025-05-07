@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,9 +9,175 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-color: #28a745;
+  --secondary-color: #ff5722;
+  --accent-color: #007bff;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-end-rgb));
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+/* Header Styles */
+.tm-header {
+  background-color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tm-logo {
+  max-height: 100px;
+  border-radius: 15px;
+}
+
+.phone-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-phone {
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.phone-label {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.7;
+}
+
+/* Welcome Section Styles */
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+  position: relative;
+}
+
+.tm-brand-container-outer {
+  padding: 50px 0;
+}
+
+.tm-bg-black-transparent {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+}
+
+.tm-brand-name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tm-brand-description {
+  font-size: 1.2rem;
+}
+
+.tm-welcome-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 50px 0;
+}
+
+.tm-welcome-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.tm-welcome-icon {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Gallery Styles */
+.carousel {
+  margin: 50px 0;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Services Styles */
+.tm-service-item {
+  text-align: center;
+  padding: 30px;
+}
+
+.tm-service-icon {
+  margin-bottom: 20px;
+}
+
+.tm-text-green {
+  color: var(--primary-color);
+}
+
+.tm-text-orange {
+  color: var(--secondary-color);
+}
+
+.tm-text-blue {
+  color: var(--accent-color);
+}
+
+/* Contact Styles */
+.tm-contact-items-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.tm-contact-item {
+  text-align: center;
+}
+
+.tm-contact-link {
+  text-decoration: none;
+  color: white;
+}
+
+.tm-contact-item-icon {
+  margin-bottom: 15px;
+}
+
+/* Footer Styles */
+.tm-copyright-text {
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tm-contact-items-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .tm-brand-name {
+    font-size: 2rem;
+  }
+  
+  .tm-welcome-container {
+    padding: 30px 0;
+  }
 } 
