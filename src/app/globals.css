@@ -1040,4 +1040,15 @@ html {
   .hero-ddd-img-desc {
     font-size: 1.05rem;
   }
+}
+
+.bg-photo {
+  background-image: url('/img/mini-profile-bg-02.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
 } 

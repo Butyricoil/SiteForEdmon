@@ -18,9 +18,11 @@ export default function Home() {
       <NewHeader />
       <Hero />
       <Gallery />
-      <About />
-      <Services />
-      <Contacts />
+      <div className="bg-photo">
+        <About />
+        <Services />
+        <Contacts />
+      </div>
       <Footer />
     </>
   );

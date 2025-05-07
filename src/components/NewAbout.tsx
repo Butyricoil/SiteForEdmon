@@ -1,35 +1,22 @@
 import { useEffect, useRef } from 'react'
 
 export default function About() {
-  const bgRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!bgRef.current) return
-      const scrollY = window.scrollY
-      bgRef.current.style.transform = `translateY(${scrollY * 0.2}px)`
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
-    <section className="about-section" style={{ position: 'relative', overflow: 'hidden' }}>
+    <section className="about-section" style={{ position: 'relative', overflow: 'hidden', display: 'flex', justifyContent: 'center' }}>
       <div
-        ref={bgRef}
+        className="about-card"
         style={{
-          backgroundImage: "url('/img/mini-profile-bg-01.jpg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          position: 'absolute',
-          inset: 0,
-          zIndex: 0,
-          opacity: 0.5,
-          willChange: 'transform',
-          transition: 'background-image 0.7s',
+          background: 'rgba(255,255,255,0.85)',
+          borderRadius: '24px',
+          boxShadow: '0 8px 32px rgba(0,0,0,0.10)',
+          padding: '2.5rem 2rem',
+          maxWidth: '600px',
+          width: '100%',
+          margin: '2rem 0',
+          position: 'relative',
+          zIndex: 1,
         }}
-      />
-      <div className="about-content" style={{ position: 'relative', zIndex: 1 }}>
+      >
         <h2>О нас</h2>
         <p>Мы специализируемся на ремонте квартир в Краснодаре. Работаем быстро, аккуратно и с гарантией. Используем современные материалы и технологии.</p>
         <ul className="about-list">

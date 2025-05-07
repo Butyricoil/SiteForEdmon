@@ -21,7 +21,7 @@ export default function Hero() {
         className="hero-ddd-img-bg"
         ref={bgRef}
         style={{
-          backgroundImage: "url('/img/mini-profile-bg-02.jpg')",
+          backgroundImage: "url('/img/mini-profile-bg-01.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           position: 'absolute',
