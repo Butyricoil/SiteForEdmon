@@ -1,6 +1,4 @@
-'use client'
-
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 
 const images = [
@@ -10,7 +8,7 @@ const images = [
   { src: '/img/repair4.jpg', alt: 'Ремонт 4' },
 ]
 
-export default function Gallery() {
+export default function NewGallery() {
   const [active, setActive] = useState(0)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
@@ -18,9 +16,7 @@ export default function Gallery() {
     timeoutRef.current = setTimeout(() => {
       setActive((prev) => (prev + 1) % images.length)
     }, 5000)
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current)
-    }
+    return () => { if (timeoutRef.current) clearTimeout(timeoutRef.current) }
   }, [active])
 
   const goTo = (idx: number) => {
@@ -33,6 +29,7 @@ export default function Gallery() {
 
   return (
     <section className="gallery-section">
+      <h2 className="gallery-title">Наши работы</h2>
       <div className="gallery-carousel">
         {images.map((img, idx) => (
           <div
@@ -50,12 +47,8 @@ export default function Gallery() {
             />
           </div>
         ))}
-        <button className="carousel-control-prev" onClick={prev} aria-label="Предыдущий слайд">
-          &#10094;
-        </button>
-        <button className="carousel-control-next" onClick={next} aria-label="Следующий слайд">
-          &#10095;
-        </button>
+        <button className="carousel-control-prev" onClick={prev} aria-label="Предыдущий слайд">&#10094;</button>
+        <button className="carousel-control-next" onClick={next} aria-label="Следующий слайд">&#10095;</button>
         <div className="carousel-indicators">
           {images.map((_, idx) => (
             <button

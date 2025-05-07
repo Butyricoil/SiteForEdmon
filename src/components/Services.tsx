@@ -1,6 +1,30 @@
+'use client'
+
 import { FaPaintRoller, FaHammer, FaLightbulb } from 'react-icons/fa'
+import { useEffect, useRef } from 'react'
 
 export default function Services() {
+  const servicesRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in')
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    if (servicesRef.current) {
+      observer.observe(servicesRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [])
+
   const services = [
     {
       icon: <FaPaintRoller className="fas fa-3x fa-paint-roller tm-service-icon" />,
@@ -23,15 +47,17 @@ export default function Services() {
   ]
 
   return (
-    <section id="tmServices">
+    <section id="tmServices" ref={servicesRef}>
       <div className="container-fluid">
-        <h2 className="text-center tm-text-green">Наши услуги</h2>
+        <h2 className="text-center tm-text-green mb-5">Наши услуги</h2>
         <div className="row">
           {services.map((service, index) => (
             <div key={index} className="col-md-4 tm-service-item">
-              {service.icon}
-              <h3 className={service.color}>{service.title}</h3>
-              <p>{service.description}</p>
+              <div className="service-content">
+                {service.icon}
+                <h3 className={service.color}>{service.title}</h3>
+                <p className="service-description">{service.description}</p>
+              </div>
             </div>
           ))}
         </div>
