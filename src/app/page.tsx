@@ -17,8 +17,8 @@ export default function Home() {
     <>
       <NewHeader />
       <Hero />
-      <About />
       <Gallery />
+      <About />
       <Services />
       <Contacts />
       <Footer />
