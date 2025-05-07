@@ -31,6 +31,11 @@
             </a>
             <p class="phone-label">Позвонить</p>
           </div>
+          <div class="phone-container" style="margin-left: 10px;">
+            <a href="https://wa.me/79186495053" target="_blank" class="btn-whatsapp">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <p class="phone-label">Написать</p>
         </div>
       </div>
     </div>
@@ -175,6 +180,13 @@
                 <p>Наш YouTube канал</p>
               </a>
             </div>
+            <!-- WhatsApp контакт -->
+            <div class="tm-contact-item">
+              <a href="https://wa.me/79186495053" target="_blank" class="tm-contact-link">
+                <i class="fab fa-whatsapp fa-5x tm-contact-item-icon" style="color: #25D366;"></i>
+                <p>Написать в WhatsApp</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -183,6 +195,9 @@
 
 
   <footer class="col-12">
+    <div class="visitor-counter">
+      <p>Посетителей: <span id="visitorCount">0</span></p>
+    </div>
     <p class="text-center tm-copyright-text">Copyright 2024 Ремонт от Эдмона</p>
   </footer>
   </div>
@@ -191,6 +206,19 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  
+  <!-- Скрипт для счетчика посетителей -->
+  <script>
+    // Получаем текущее значение счетчика из localStorage
+    let count = localStorage.getItem('visitorCount') || 0;
+    count = parseInt(count) + 1;
+    
+    // Сохраняем обновленное значение
+    localStorage.setItem('visitorCount', count);
+    
+    // Отображаем значение на странице
+    document.getElementById('visitorCount').textContent = count;
+  </script>
 
 </body>
 

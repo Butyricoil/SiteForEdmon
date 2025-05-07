@@ -19,6 +19,23 @@
     text-align: center;
 }
 
+.btn-whatsapp {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    background-color: #25D366;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-whatsapp i {
+    margin-right: 5px;
+}
+
   
   .phone-label {
     margin-top: 5px;
@@ -36,4 +53,22 @@
     margin-bottom: 20px; /* Отступ снизу */
     border-radius: 15px; /* Закругление углов */
   }
+  
+.visitor-counter {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.visitor-counter p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+#visitorCount {
+    font-weight: bold;
+    color: #28a745;
+}
   
