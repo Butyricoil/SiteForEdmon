@@ -18,7 +18,13 @@ export default function Home() {
       <NewHeader />
       <Hero />
       <Gallery />
-      <div className="bg-photo">
+      <div className="bg-photo" style={{
+        backgroundImage: "url('/img/mini-profile-bg-02.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        position: 'relative'
+      }}>
         <About />
         <Services />
         <Contacts />

@@ -20,11 +20,18 @@ const services = [
 
 export default function NewServices() {
   return (
-    <section className="services-section" style={{ display: 'flex', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
+    <section className="services-section" style={{ 
+      display: 'flex', 
+      justifyContent: 'center', 
+      position: 'relative', 
+      overflow: 'hidden',
+      padding: '4rem 0',
+      background: 'transparent'
+    }}>
       <div
         className="services-card"
         style={{
-          background: 'rgba(255,255,255,0.85)',
+          background: 'rgba(255,255,255,0.3)',
           borderRadius: '24px',
           boxShadow: '0 8px 32px rgba(0,0,0,0.10)',
           padding: '2.5rem 2rem',
@@ -33,6 +40,7 @@ export default function NewServices() {
           margin: '2rem 0',
           position: 'relative',
           zIndex: 1,
+          backdropFilter: 'blur(8px)',
         }}
       >
         <h2 className="services-title">Наши услуги</h2>

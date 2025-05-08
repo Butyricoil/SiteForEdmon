@@ -6,7 +6,7 @@ export default function NewContacts() {
       <div
         className="contacts-card"
         style={{
-          background: 'rgba(255,255,255,0.85)',
+          background: 'rgba(255,255,255,0.3)',
           borderRadius: '24px',
           boxShadow: '0 8px 32px rgba(0,0,0,0.10)',
           padding: '2.5rem 2rem',
@@ -15,6 +15,7 @@ export default function NewContacts() {
           margin: '2rem 0',
           position: 'relative',
           zIndex: 1,
+          backdropFilter: 'blur(8px)',
         }}
       >
         <h2 className="contacts-title">Контакты</h2>
