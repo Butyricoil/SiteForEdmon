@@ -47,35 +47,83 @@ bower_components
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
-node_modules/
-jspm_packages/
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Typescript v1 declaration files
-typings/
+# Testing
+/coverage
+.nyc_output
 
-#WebStorm
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Production
+/build
+/dist
+
+# Misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# Debug
+npm-debug.log*
+
+# Local env files
+.env*.local
+.env
+.env.development
+.env.test
+.env.production
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# IDE - WebStorm/IntelliJ
 .idea/
+*.iml
+*.iws
+.idea_modules/
+
+# IDE - Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+logs
+*.log
+
+# Cache
+.cache/
+.eslintcache
+.stylelintcache
 
 # Optional npm cache directory
 .npm
 
-# Optional eslint cache
-.eslintcache
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# dotenv environment variables file
-.env
-
-
+# Local dependencies
+/public/fonts/*
+!/public/fonts/.gitkeep
+/public/css/*
+!/public/css/.gitkeep
+/public/js/*
+!/public/js/.gitkeep
 
 .travis/README.md
 .travis/scripts
