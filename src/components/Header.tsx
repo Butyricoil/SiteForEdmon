@@ -1,45 +1,22 @@
-'use client'
-
-import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { FaPhone, FaWhatsapp } from 'react-icons/fa'
 
-export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
+export default function NewHeader() {
   return (
-    <header className={`tm-header ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="col-6">
-            <Image
-              src="/img/logo.png"
-              alt="logo"
-              width={100}
-              height={100}
-              className="tm-logo"
-              style={{ maxHeight: isScrolled ? '60px' : '80px' }}
-              priority
-            />
-          </div>
-          <div className="col-6 text-right">
-            <div className="phone-container">
-              <Link href="tel:+79186495053" className="btn-phone">
-                <i className="fas fa-phone-alt mr-2"></i>
-                +7 (918) 649-50-53
-              </Link>
-              <p className="phone-label">Позвонить</p>
-            </div>
-          </div>
+    <header className="main-header">
+      <div className="header-inner">
+        <div className="header-logo">
+          <Image src="/img/logo.png" alt="Логотип" width={64} height={64} priority />
+        </div>
+        <div className="header-actions">
+          <a href="tel:+79186495053" className="header-btn call">
+            <FaPhone size={18} />
+            <span>Позвонить</span>
+          </a>
+          <a href="https://wa.me/79186495053" target="_blank" rel="noopener noreferrer" className="header-btn whatsapp">
+            <FaWhatsapp size={18} />
+            <span>Написать</span>
+          </a>
         </div>
       </div>
     </header>

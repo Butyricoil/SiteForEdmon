@@ -623,25 +623,39 @@ html {
 
 /* ABOUT */
 .about-section {
-  background: #fff;
+  background: transparent;
   padding: 4rem 0 2rem 0;
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
+
 .about-content {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  position: relative;
+  z-index: 1;
 }
+
 .about-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #1a237e;
 }
+
 .about-content p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
+  color: #333;
 }
+
 .about-list {
   list-style: none;
   padding: 0;
@@ -651,12 +665,15 @@ html {
   justify-content: center;
   gap: 1.2rem;
 }
+
 .about-list li {
-  background: #f5f5f5;
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   color: #333;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* GALLERY */
@@ -815,14 +832,92 @@ html {
 
 /* FOOTER */
 .footer-section {
-  background: #222b36;
+  background: transparent;
   color: #fff;
   padding: 2rem 0 1rem 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.footer-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/img/mini-profile-bg-02.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  opacity: 0.55;
+  z-index: 1;
+}
+
 .footer-content {
+  position: relative;
+  z-index: 2;
   font-size: 1rem;
-  opacity: 0.8;
+  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.footer-content p {
+  margin-bottom: 1rem;
+}
+
+/* Visit Counter Styles */
+.visit-counter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin-top: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.visit-label {
+  font-weight: 500;
+}
+
+.visit-number {
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  min-width: 2.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 1.5rem 1rem;
+    margin: 0 1rem;
+  }
+  
+  .footer-content {
+    padding: 1.5rem 1rem;
+    margin: 0 1rem;
+  }
+  
+  .about-list {
+    gap: 0.8rem;
+  }
+  
+  .about-list li {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 }
 
 /* Адаптивность */
